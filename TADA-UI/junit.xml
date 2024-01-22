@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="13" failures="0" errors="0" time="201.036">
+  <testsuite name="src\__tests__\manualClassificationServices.test.tsx" errors="0" failures="0" skipped="0" timestamp="2022-10-04T11:02:39" time="23.422" tests="5">
+    <testcase classname="Get Classification status when get classification status call is successful should return classification status" name="Get Classification status when get classification status call is successful should return classification status" time="0.01">
+    </testcase>
+    <testcase classname="Get Classification Data when get classification data API is successful should able to get a classification data" name="Get Classification Data when get classification data API is successful should able to get a classification data" time="0.002">
+    </testcase>
+    <testcase classname="Get Classification Data when get classification data API call fails should return empty classification data list" name="Get Classification Data when get classification data API call fails should return empty classification data list" time="0.119">
+    </testcase>
+    <testcase classname="Save Classified Data when save classified data API is successful should able to save classified data" name="Save Classified Data when save classified data API is successful should able to save classified data" time="0.001">
+    </testcase>
+    <testcase classname="Save Classified Data when save classiifed data API call fails should not add the data when body is wrong" name="Save Classified Data when save classiifed data API call fails should not add the data when body is wrong" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\__tests__\login.test.tsx" errors="0" failures="0" skipped="0" timestamp="2022-10-04T11:02:39" time="67.439" tests="1">
+    <testcase classname="Login Page Test Checking Login Button" name="Login Page Test Checking Login Button" time="0.105">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\__tests__\profile.test.tsx" errors="0" failures="0" skipped="0" timestamp="2022-10-04T11:02:39" time="139.296" tests="2">
+    <testcase classname="Profile Page Test Checking Page loaded" name="Profile Page Test Checking Page loaded" time="0.224">
+    </testcase>
+    <testcase classname="Profile Page Test checking input fields are loaded and change event triggering correctly" name="Profile Page Test checking input fields are loaded and change event triggering correctly" time="0.173">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\__tests__\manualClassification.test.tsx" errors="0" failures="0" skipped="0" timestamp="2022-10-04T11:02:39" time="139.385" tests="1">
+    <testcase classname="Manual Classification Test should render the basic fields" name="Manual Classification Test should render the basic fields" time="0.537">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\__tests__\addWalletAddress.test.tsx" errors="0" failures="0" skipped="0" timestamp="2022-10-04T11:02:39" time="139.32" tests="1">
+    <testcase classname="Wallet Address Test should render the basic fields" name="Wallet Address Test should render the basic fields" time="0.492">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\__tests__\addExchange.test.tsx" errors="0" failures="0" skipped="0" timestamp="2022-10-04T11:02:39" time="140.792" tests="1">
+    <testcase classname="Add Exchange Test should render the basic fields" name="Add Exchange Test should render the basic fields" time="0.326">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\__tests__\addManual.test.tsx" errors="0" failures="0" skipped="0" timestamp="2022-10-04T11:02:39" time="167.218" tests="2">
+    <testcase classname="add Manuak Page Test Checking Page loaded" name="add Manuak Page Test Checking Page loaded" time="0.18">
+    </testcase>
+    <testcase classname="add Manuak Page Test checking input fields are loaded and change event triggering correctly" name="add Manuak Page Test checking input fields are loaded and change event triggering correctly" time="0.313">
+    </testcase>
+  </testsuite>
+</testsuites>
