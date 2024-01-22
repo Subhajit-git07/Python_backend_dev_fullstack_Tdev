@@ -1,0 +1,61 @@
+# Python package
+# Create and test a Python package on multiple Python versions.
+# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+resources:
+  repositories:
+  - repository: raptor-core-templates
+    type: git
+    name: raptor-core-templates
+    ref: refs/heads/release/0.8.9
+variables:
+  - template: .azurepipelines/api.ci.env.yml
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+strategy:
+  matrix:
+    Python37:
+      python.version: '3.9'
+
+steps:
+- template: ./CiCd/SecurityScan/prepare.yml@raptor-core-templates
+  parameters:
+    checkmarxScan: false
+    whitesourceScan: true
+    sonarScan: false
+
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '$(python.version)'
+  displayName: 'Use Python $(python.version)'
+
+- script: |
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+  displayName: 'Install dependencies'
+
+- script: |
+    pip install pytest pytest-azurepipelines
+    pytest
+  displayName: 'pytest'
+
+- template: ./CiCd/SecurityScan/scan.yml@raptor-core-templates
+  parameters:
+    checkmarxScan: false
+    whitesourceScan: true
+    sonarScan: false
+
+- task: CopyFiles@2
+  inputs:
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'tada-api-drop-stg'
+    publishLocation: 'Container'

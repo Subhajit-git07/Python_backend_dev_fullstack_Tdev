@@ -1,0 +1,32 @@
+[{
+  "chainID": "1",
+  "name": "Ethereum",
+  "symbol": "ETH",
+  "contracts": {
+    "ERC721": {},
+    "ERC20": {}
+  },
+  "API param": {
+    "covalent": {
+      "page-size": 1000
+    }
+  }
+},{
+  "chainID": "43114",
+  "name": "Avalanche",
+  "symbol": "AVAX",
+  "API param": {
+    "covalent": {
+      "page-size": 1000
+    }
+  }
+},{
+  "chainID": "2020",
+  "name": "Ronin",
+  "symbol": "RON",
+  "API param": {
+    "covalent": {
+      "page-size": 1000
+    }
+  }
+}]

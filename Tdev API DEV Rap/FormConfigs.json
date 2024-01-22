@@ -1,0 +1,244 @@
+[{
+  "form": "8949",
+  "year": "2022",
+  "sections": [
+    {
+      "sectionId": "dec42373-db54-4750-a31e-54d47485ca1a",
+      "sectionName": "Short-Term",
+      "description": "Transactions involving capital assets you held 1 year or less are generally short-term (see instructions). For long-term transactions, see page 2.",
+      "note": "",
+      "checkBoxConfig": [
+        {
+          "optionId": "fa9c2dc6-4449-4ddf-ad70-65bc1363d77c",
+          "displayText": "(A) Short-term transactions reported on Form(s) 1099-B showing basis was reported to the IRS (see Note above)",
+          "defaultValue": false
+        },
+        {
+          "optionId": "b394edd3-03a3-4cd3-8473-39d3d74bb5e2",
+          "displayText": "(B) Short-term transactions reported on Form(s) 1099-B showing basis wasn’t reported to the IRS",
+          "defaultValue": false
+        },
+        {
+          "optionId": "f1a1f2c8-fcc9-419c-90fb-e89168d5e79b",
+          "displayText": "(C) Short-term transactions not reported to you on Form 1099-B",
+          "defaultValue": false
+        }
+      ],
+      "tableConfig": [
+        {
+          "columnId": "cbd7d954-0290-431f-a8b0-335b11e0d932",
+          "name": "(a) Description of property (Example: 100 sh. XYZ Co.)",
+          "inputType": "Multiline",
+          "editable": true,
+          "isRequired": true,
+          "showTotal": false,
+          "RequiredValidation": "(a) Description of property is required"
+        },
+        {
+          "columnId": "34c01a84-f471-4c9f-aaad-538dd969db7b",
+          "name": "(b) Date acquired (Mo., day, yr.)",
+          "inputType": "date",
+          "editable": true,
+          "isRequired": true,
+          "showTotal": false,
+          "RequiredValidation": "(b) Date acquired is required"
+        },
+        {
+          "columnId": "d18c0f88-3470-46ca-b0a1-ed14e7294fa6",
+          "name": "(c) Date sold or disposed of (Mo., day, yr.)",
+          "inputType": "date",
+          "editable": true,
+          "isRequired": true,
+          "RequiredValidation": "(c) Date sold or disposed is required"
+        },
+        {
+          "columnId": "e843b39d-85e7-498d-b349-9a22c91c5334",
+          "name": "(d) Proceeds (sales price) (see instructions)",
+          "inputType": "currency",
+          "editable": true,
+          "isRequired": true,
+          "showTotal": true,
+          "RequiredValidation": "(d) Proceeds is required"
+        },
+        {
+          "columnId": "1bac5598-07f5-4c71-bb6a-ded345328ef8",
+          "name": "(e) Cost or other basis. See the Note below andsee Column (e) in the seperate instructions",
+          "inputType": "currency",
+          "editable": true,
+          "isRequired": true,
+          "showTotal": true,
+          "RequiredValidation": "(e) Cost or other basis is required"
+        },
+        {
+          "columnId": "5cb9da1e-899b-4086-a34b-a406899881f3",
+          "name": "(f) Code(s) from instructions",
+          "options": [
+            "B",
+            "T",
+            "N",
+            "H",
+            "D",
+            "Q",
+            "X",
+            "R",
+            "W",
+            "L",
+            "E",
+            "S",
+            "C",
+            "M",
+            "O",
+            "Z",
+            "Y"
+          ],
+          "inputType": "multiselect",
+          "editable": true,
+          "isRequired": false,
+          "showTotal": false,
+          "groupName": "codes",
+          "groupDisplayText": "Adjustment, if any, to gain or loss. If you enter an amount in column (g), enter a code in column (f). See the seperate instructions"
+        },
+        {
+          "columnId": "e820659a-9524-45fc-a056-669feb2b8d7a",
+          "name": "(g) Amount of adjustment",
+          "inputType": "text",
+          "editable": true,
+          "isRequired": false,
+          "groupName": "codes",
+          "showTotal": true,
+          "regex": "(^([0-9]*(\\.\\d+)?$)|^([(]+([0-9]*(\\.\\d+)*)+[)])?$)",
+          "regexValidation": "Please Enter the correct value (Eg): 99, (34)",
+          "groupDisplayText": "Adjustment, if any, to gain or loss. If you enter an amount in column (g), enter a code in column (f). See the seperate instructions"
+        },
+        {
+          "columnId": "6b0cb078-e1b8-4291-8547-6e84b754769b",
+          "name": "(h) Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g)",
+          "inputType": "text",
+          "editable": false,
+          "isRequired": false,
+          "showTotal": true,
+          "RequiredValidation": "(h) Gain or (loss) is required"
+        }
+      ]
+    },
+    {
+      "sectionId": "0dd921fd-0e75-42c9-90ef-7d39e0ac85b7",
+      "sectionName": "Long-Term",
+      "description": "Transactions involving capital essets you held more than 1 year are generally long-term (see instructions). FOr short-term transactions, see page 1.",
+      "note": "",
+      "checkBoxConfig": [
+        {
+          "optionId": "f36f6334-c322-4a7e-809a-dd5ad4d50ffd",
+          "displayText": "(A) Long-term transactions reported on Form(s) 1099-B showing basis was reported to the IRS (see Note above)",
+          "defaultValue": false
+        },
+        {
+          "optionId": "1c77a74b-4f91-42b4-8786-9829820adeca",
+          "displayText": "(B) Long-term transactions reported on Form(s) 1099-B showing basis wasn’t reported to the IRS",
+          "defaultValue": false
+        },
+        {
+          "optionId": "5c555857-d386-4e84-b504-82ee4b4b4ebb",
+          "displayText": "(C) Long-term transactions not reported to you on Form 1099-B",
+          "defaultValue": false
+        }
+      ],
+      "tableConfig": [
+        {
+          "columnId": "e3796696-a96d-4fc4-8ddb-f17ab3157d29",
+          "name": "(a) Description of property (Example: 100 sh. XYZ Co.)",
+          "inputType": "Multiline",
+          "editable": true,
+          "isRequired": true,
+          "showTotal": false,
+          "RequiredValidation": "(a) Description of property is required"
+        },
+        {
+          "columnId": "457efea8-fd0f-4839-8fed-26673f16bc90",
+          "name": "(b) Date acquired (Mo., day, yr.)",
+          "inputType": "date",
+          "editable": true,
+          "isRequired": true,
+          "showTotal": false,
+          "RequiredValidation": "(b) Date acquired is required"
+        },
+        {
+          "columnId": "bb82a1a9-0c64-4261-97f6-b47eee5bfeab",
+          "name": "(c) Date sold or disposed of (Mo., day, yr.)",
+          "inputType": "date",
+          "editable": true,
+          "isRequired": true,
+          "RequiredValidation": "(c) Date sold or disposed is required"
+        },
+        {
+          "columnId": "7fb83a8b-2e01-47d4-b57b-d06957c942a0",
+          "name": "(d) Proceeds (sales price) (see instructions)",
+          "inputType": "currency",
+          "editable": true,
+          "isRequired": true,
+          "showTotal": true,
+          "RequiredValidation": "(d) Proceeds is required"
+        },
+        {
+          "columnId": "61fafedd-bf24-4357-8fef-0defc7c094c7",
+          "name": "(e) Cost or other basis. See the Note below andsee Column (e) in the seperate instructions",
+          "inputType": "currency",
+          "editable": true,
+          "isRequired": true,
+          "showTotal": true,
+          "RequiredValidation": "(e) Cost or other basis is required"
+        },
+        {
+          "columnId": "501d6d02-ae67-40d2-903b-7cbfc3f3351e",
+          "name": "(f) Code(s) from instructions",
+          "options": [
+            "B",
+            "T",
+            "N",
+            "H",
+            "D",
+            "Q",
+            "X",
+            "R",
+            "W",
+            "L",
+            "E",
+            "S",
+            "C",
+            "M",
+            "O",
+            "Z",
+            "Y"
+          ],
+          "inputType": "multiselect",
+          "editable": true,
+          "isRequired": false,
+          "showTotal": false,
+          "groupName": "codes",
+          "groupDisplayText": "Adjustment, if any, to gain or loss. If you enter an amount in column (g), enter a code in column (f). See the seperate instructions"
+        },
+        {
+          "columnId": "94c6baeb-5caa-4430-9b9e-e7d75ca28467",
+          "name": "(g) Amount of adjustment",
+          "inputType": "text",
+          "editable": true,
+          "isRequired": false,
+          "showTotal": true,
+          "groupName": "codes",
+          "regex": "(^([0-9]*(\\.\\d+)?$)|^([(]+([0-9]*(\\.\\d+)*)+[)])?$)",
+          "regexValidation": "Please Enter the correct value (Eg): 99, (34)",
+          "groupDisplayText": "Adjustment, if any, to gain or loss. If you enter an amount in column (g), enter a code in column (f). See the seperate instructions"
+        },
+        {
+          "columnId": "e6748415-52e5-4f7b-ada0-63de9b584d18",
+          "name": "(h) Gain or (loss). Subtract column (e) from column (d) and combine the result with column (g)",
+          "inputType": "text",
+          "editable": false,
+          "isRequired": false,
+          "showTotal": true,
+          "RequiredValidation": "(h) Gain or (loss) is required"
+        }
+      ]
+    }
+  ]
+}]

@@ -1,0 +1,14 @@
+{
+"API_V1_STR" : "/api/v1",
+"API_V2_STR" : "/api/tada/v2",
+"aud" : "api://ea1e2d58-246f-4470-bcd0-b51456b717fd",
+"iss" : "https://sts.windows.net/5b973f99-77df-4beb-b27d-aa0c70b8482c/",
+"cdbEnvAccessKey": "cdbAccessKey",
+"saEnvAccessKey": "saAccessKey",
+"apiLoggerConnStr": "API_logger_string",
+"origins" : ["https://tada-stg.ey.com"],
+"allow_credentials" : true,
+"allow_methods" : ["GET", "POST", "PUT", "DELETE"],
+"allow_headers" : ["*"],
+"jwks_uri":"https://login.microsoftonline.com/common/discovery/v2.0/keys"
+}
