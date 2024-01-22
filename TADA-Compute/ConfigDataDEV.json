@@ -1,0 +1,23 @@
+{
+    "aud" : "api://857af365-fa74-4da2-a45b-9a99361cf23e",
+    "iss" : "https://sts.windows.net/adb53b4f-b05f-4dcb-a2e1-9111380568c3/",
+    
+    "cdbEnvAccessKey": "cdbAccessKey",
+    "covalentEnvAccessKey": "CovalentAccessKey",
+    "coinGeckoEnvAccessKey": "CoinGeckoAccessKey",
+    "saEnvAccessKey": "saAccessKey",
+    
+    "ApplicationLoggerKey": "Compute_logger_string",
+
+    "coinListUrl" : "https://api.coingecko.com/api/v3/coins/list",
+    "priceUrl" : "https://api.coingecko.com/api/v3/coins/{}/contract/{}/market_chart/range?vs_currency=usd&from={}&to={}",
+    "priceUrl_coinid" : "https://api.coingecko.com/api/v3/coins/{}/market_chart/range?vs_currency=usd&from={}&to={}",
+
+    "transactionUrl" : "https://api.covalenthq.com/v1/{}/address/{}/transactions_v2/?page-number={}&page-size={}&key={}",
+    "OnetransactionUrl" : "https://api.covalenthq.com/v1/{}/transaction_v2/{}/",
+    "BalancesUrl" : "https://api.covalenthq.com/v1/{}/address/{}/balances_v2/?page-number={}&key={}",
+    "validateWallet" :  "https://api.covalenthq.com/v1/{}/address/{}/transactions_v2/?page-number={}&page-size={}&key={}",
+
+    "api_url" : "https://api.binance.us",
+    "api_exchange_info" : "https://api.binance.us/api/v3/exchangeInfo"
+}
